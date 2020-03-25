@@ -57,7 +57,7 @@ class Student
     student = self.new(row[1], row[2], row[0])
   end
 
-  def selffind_by_name(name)
+  def self.find_by_name(name)
     sql = <<-SQL
       SELECT *
       FROM students
